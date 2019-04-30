@@ -1,10 +1,14 @@
 # Machine-Learning
 Step by Step in Machine Learning
-This project is a summary of the codes that can be used to make Exploratory Data Analysis, Build & Validate Model, Tune Hyperparameter and Interpret Important Features.
+This project is a summary of the codes that can be used to apply machine learning method for real data analysis.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The code has several parts:
+* Exploratory Data Analysis
+* Build Model and Hyperparameter Tunning
+* Interpret Important Features.
+
 
 ### Prerequisites
 
