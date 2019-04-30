@@ -12,14 +12,21 @@ These instructions will get you a copy of the project up and running on your loc
 The code is in Python and requires the following libraries:
 
 Data Manipulation:
+```
 numpy, pandas
+```
 Plot Graph:
+```
 matplotlib, seaborn
+```
 Machine Learning Modeling:
+```
 sklearn, imblearn, xgboost, lightgbm
+```
 Others:
+```
 time
-
+```
 
 ```
 Give the example
