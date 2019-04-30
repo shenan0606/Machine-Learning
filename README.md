@@ -27,7 +27,7 @@ Others:
 ```
 time
 ```
-
+Libaries can be downloaded with Anaconda: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html
 ```
 Give the example
 ```
