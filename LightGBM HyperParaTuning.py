@@ -3,7 +3,6 @@
 Created on Mon Jul 29 13:57:00 2019
 Instead of Cross Validation, this Tunning function use only one out-of-sample validation.
 This should reduce the tunning time, but still have some benefits of the validation.
-@author: SW010056
 """
 import numpy as np
 import lightgbm as lgb
