@@ -3,6 +3,7 @@
 Created on Mon Jul 29 13:57:00 2019
 Instead of Cross Validation, this Tunning function use only one out-of-sample validation.
 This should reduce the tunning time, but still have some benefits of the validation.
+@author: SW010056
 """
 import numpy as np
 import lightgbm as lgb
@@ -94,7 +95,7 @@ def LGBMTuning(
 
             if metric_eval == "Maximize":
                 if metric_value > best_value:
-                    best_param, best_n, best_value, best_model = model_param, n, metric_value, lgb_model
+                    best_param, best_n, best_value, best_model = model_param, lgb_model.best_iteration, metric_value, lgb_model
                     print(
                         "Best Parameters Update: {} Num of Iteration: {} Best Value: {} \n".format(
                             best_param, best_n, best_value
@@ -103,7 +104,7 @@ def LGBMTuning(
 
             if metric_eval == "Minimize":
                 if metric_value < best_value:
-                    best_param, best_n, best_value, best_model = model_param, n, metric_value, lgb_model
+                    best_param, best_n, best_value, best_model = model_param, lgb_model.best_iteration, metric_value, lgb_model
                     print(
                         "Best Parameters Update: {} Num of Iteration: {} Best Value: {} \n".format(
                             best_param, best_n, best_value
